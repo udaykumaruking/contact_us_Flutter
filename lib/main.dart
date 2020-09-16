@@ -38,25 +38,57 @@ class contact extends StatelessWidget {
                 color: Colors.grey[800],
               ),
             ),
+            SizedBox(height: 20,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
+
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 20,
+                        )
+                      ]
+                    ),
                     height: 100,
                     width: 150,
-                    color: Colors.orange,
-                    child: Text('container 1 '),
+
+                    //color: Colors.white,
+                    child: Column(
+                      children: [
+                        Icon(Icons.alternate_email, color: Colors.orange, size: 50,),
+                        Text('Write to us'),
+                        Text('udaykumaruking\n@gmail.com', textAlign: TextAlign.center,),
+                      ],
+                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 20,
+                        )
+                      ]
+                    ),
                     height: 100,
                     width: 150,
-                    color: Colors.orange,
-                    child: Text('container 2 '),
+                    // color: Colors.white,
+                    child: Column(
+                      children: [
+                        Icon(Icons.help, color: Colors.orange, size: 50,),
+                        Text('FAQs'),
+                      ],
+                    ),
                   ),
                 ),
               ],
@@ -67,10 +99,24 @@ class contact extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 20,
+                        )
+                      ]
+                    ),
                     height: 100,
                     width: 150,
-                    color: Colors.orange,
-                    child: Text('container 1 '),
+                    // color: Colors.white,
+                    child: Column(
+                      children: [
+                        Icon(Icons.phone, color: Colors.orange, size: 50,),
+                        Text('+91 9912668703 '),
+                      ],
+                    ),
                   ),
                 ),
                 Padding(
@@ -78,14 +124,33 @@ class contact extends StatelessWidget {
                   child: Container(
                     height: 100,
                     width: 150,
-                    color: Colors.orange,
-                    child: Text('container 2 '),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 20,
+                        )
+                      ]
+                    ),
+                    //color: Colors.white,
+                    child: Column(
+                      children: [
+                        Icon(Icons.home, color: Colors.orange, size: 50,),
+                        Text('Warangal '),
+                      ],
+                    ),
                   ),
                 ),
               ],
-            )
+
+            ),
+            Text('Copyright . 2020 UdayKumarUking', style: TextStyle(color: Colors.orange),),
+            Text('All Rights Reserved', style: TextStyle(color: Colors.orange),),
           ],
+
         ),
+
       ),
     );
   }
